@@ -1,0 +1,88 @@
+.home-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(157, 156, 156);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px 30px;
+  width: 90%;
+}
+
+.home-nav-search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(157, 156, 156);
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 5px 15px; /* Adjust padding for smaller screens */
+  height: 30px;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.home-nav-search-container input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: rgb(157, 156, 156);
+  font-size: 15px;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 80%;
+  gap: 50px;
+}
+
+.right p {
+  cursor: pointer;
+  
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 227, 227);
+  width: 10%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 25px;
+  color: rgb(4, 4, 128);
+  border: 1px solid rgb(4, 4, 128);
+  align-self: start;
+}
+
+.create-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(4, 4, 128);
+  cursor: pointer;
+}
+
+.home-nav-active {
+  color: lightskyblue;
+}
+
+@media screen and (max-width: 768px) {
+  .home-nav-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items vertically */
+  }
+
+  .right {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 10px; /* Add some space between items */
+  }
+
+  .home-nav-search-container {
+    width: 100%; /* Take full width */
+  }
+}

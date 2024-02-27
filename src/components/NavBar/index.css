@@ -1,0 +1,60 @@
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    color: rgb(157, 156, 156);
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px;
+    width: 100vw;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+    background-color:#ffffff;
+}
+  
+ 
+ 
+  
+  .nav-content {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    gap: 30px;
+  }
+  
+  .nav-content li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .nav-active {
+    color: rgb(5, 5, 115);
+    font-weight: bold;
+    border-bottom: 4px solid rgb(5, 5, 115);
+    border-radius: 3px;
+    margin-bottom: 2px;
+  }
+  
+  .nav-user-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-user-container p {
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+  }
+  
